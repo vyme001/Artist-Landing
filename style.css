@@ -1,0 +1,11 @@
+body {
+  height: 100vh;
+  width: 100vw;
+  margin: 0;
+  /*background-image must be set first and the library of background properties are set after. otherwise they wont be applied*/
+  background: url(./media/img/VUH-maskwoman.jpg);
+  background-origin: border-box;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
