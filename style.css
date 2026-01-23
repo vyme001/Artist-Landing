@@ -11,16 +11,16 @@ body {
 }
 
 footer {
-  background-color: rgb(255, 215, 0);
+  background-color: rgba(255, 217, 0, 0.753);
   max-width: max-content;
   min-width: max-content;
   padding: 20px;
+  /* make the footer element round like pill */
   border-radius: 9999px;
 }
 
 @media screen and (width <= 500px) {
   .social-media {
-    transition: 2s;
     flex-direction: column;
   }
 }
@@ -34,11 +34,7 @@ footer {
 }
 
 i {
+  color: rgba(42, 66, 66, 0.589);
   font-size: 2em;
   padding: 0 2px;
-}
-
-fa-brands:hover,
-fa-music:hover {
-  /* transition:; */
 }
