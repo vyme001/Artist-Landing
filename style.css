@@ -9,3 +9,36 @@ body {
   background-position: center;
   background-size: cover;
 }
+
+footer {
+  background-color: rgb(255, 215, 0);
+  max-width: max-content;
+  min-width: max-content;
+  padding: 20px;
+  border-radius: 9999px;
+}
+
+@media screen and (width <= 500px) {
+  .social-media {
+    transition: 2s;
+    flex-direction: column;
+  }
+}
+
+.social-media {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  flex: 1;
+}
+
+i {
+  font-size: 2em;
+  padding: 0 2px;
+}
+
+fa-brands:hover,
+fa-music:hover {
+  /* transition:; */
+}
