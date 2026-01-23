@@ -9,3 +9,24 @@ body {
   background-position: center;
   background-size: cover;
 }
+
+@media screen and (width <= 500px) {
+  .social-media {
+    flex-direction: column;
+  }
+}
+
+.social-media {
+  display: flex;
+  flex-wrap: wrap;
+  flex: 1;
+}
+
+i {
+  font-size: 2em;
+}
+
+fa-brands:hover,
+fa-music:hover {
+  /* transition:; */
+}
