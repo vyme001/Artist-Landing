@@ -55,12 +55,20 @@ header {
   margin: 0;
   border-radius: 8px;
 }
+
 .media-block {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .media-player {
   width: 100%;
+}
+
+fieldset {
+  border-radius: 8px;
+  border: 1px solid rgba(42, 66, 66, 0.76);
 }
 
 ul,
@@ -101,17 +109,20 @@ footer {
   max-width: max-content;
   min-width: max-content;
   padding: 20px;
+  margin-top: 20px;
   /* make the footer element round like a pill */
   border-radius: 9999px;
 }
 
-@media screen and (width <= 500px) {
+@media screen and (width <= 1100px) {
   .img-grillz {
     visibility: hidden;
     width: 0;
     height: 0;
   }
+}
 
+@media screen and (width <= 500px) {
   .social-media {
     flex-direction: column;
   }
