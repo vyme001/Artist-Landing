@@ -83,6 +83,8 @@ header {
 
 .media-block {
   display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .image {
@@ -178,20 +180,18 @@ footer {
 
 @media screen and (width <= 430px) {
   .media-block {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    justify-content: space-around;
   }
 
   .tour-player {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
   }
 
   .img-grillz {
-    max-width: auto;
-    max-height: auto;
+    max-width: 130px;
+    max-height: 350px;
   }
 
   .shop-ig-buttons {
