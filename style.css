@@ -88,13 +88,17 @@ footer {
   max-width: max-content;
   min-width: max-content;
   padding: 20px;
-  /* make the footer element round like pill */
+  /* make the footer element round like a pill */
   border-radius: 9999px;
 }
 
 @media screen and (width <= 500px) {
   .social-media {
     flex-direction: column;
+  }
+
+  footer {
+    padding: 10px;
   }
 }
 
