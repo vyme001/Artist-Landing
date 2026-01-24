@@ -24,10 +24,11 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  align-items: center;
 }
 
 .keania-one-regular {
-  margin-top: 0;
+  margin: 0;
   font-family: "Keania One", sans-serif;
   font-size: 12vw;
   font-weight: 400;
@@ -54,6 +55,13 @@ header {
   margin: 0;
   border-radius: 8px;
 }
+.media-block {
+  display: flex;
+}
+
+.media-player {
+  width: 100%;
+}
 
 ul,
 li,
@@ -62,6 +70,11 @@ h4 {
   font-size: 4vw;
   padding: 0;
   margin: inherit;
+}
+
+.img-grillz {
+  height: 10em;
+  width: auto;
 }
 
 li {
@@ -93,6 +106,12 @@ footer {
 }
 
 @media screen and (width <= 500px) {
+  .img-grillz {
+    visibility: hidden;
+    width: 0;
+    height: 0;
+  }
+
   .social-media {
     flex-direction: column;
   }
@@ -110,8 +129,22 @@ footer {
   flex: 1;
 }
 
-i {
+i,
+button {
   color: rgba(42, 66, 66, 0.76);
   font-size: 2em;
   padding: 0 2px;
+}
+
+button {
+  background-color: rgba(255, 217, 0, 0.726);
+  border: 1px solid;
+  border-radius: 8px;
+  width: 100%;
+}
+
+.buttons {
+  display: flex;
+
+  justify-content: space-between;
 }
