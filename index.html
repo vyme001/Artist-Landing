@@ -5,15 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Music | Welcome</title>
     <link rel="stylesheet" href="./style.css" />
-    <!--Google fonts-->
+    <!--Google fonts & icons-->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Alumni+Sans+Pinstripe:ital@0;1&family=Keania+One&display=swap"
       rel="stylesheet"
     />
-    <!--Google icons-->
-
     <!--Font Awesome icons-->
     <script
       src="https://kit.fontawesome.com/5a06218430.js"
@@ -21,58 +19,68 @@
     ></script>
   </head>
   <body>
-    <div class="container">
+    <div class="main-container">
       <header>
-        <div class="tour-schedule">
+        <div class="container-1">
           <h2 class="keania-one-regular">Faire un tour</h2>
           <div class="media-block">
-            <img src="./media/img/grillz.png" alt="grillz" class="img-grillz" />
-            <fieldset class="media-player"></fieldset>
+            <img src="./media/img/VUH-eye.JPG" alt="" class="image" />
           </div>
-          <div class="tour-list">
-            <ul>
-              <li class="tour-detail">
-                <div class="card-template card-01">
-                  <div class="card-head">
-                    <h4
-                      class="performance-date alumni-sans-pinstripe-regular-italic"
-                    >
-                      Jan. 15, 2026
-                    </h4>
-                    <p
-                      class="performance-count alumni-sans-pinstripe-regular-italic"
-                    >
-                      Lorem 01
-                    </p>
+          <div class="tour-player">
+            <div class="tour-list">
+              <span class="media-control">
+                <i class="fa-solid fa-angle-left"></i>
+              </span>
+              <ul class="carousel">
+                <li class="tour-detail">
+                  <div class="card-template">
+                    <div class="card-head">
+                      <h4
+                        class="performance-date alumni-sans-pinstripe-regular-italic"
+                      >
+                        Jan. 15, 2026
+                      </h4>
+                    </div>
+                    <div class="performance-details">
+                      <p
+                        class="performance-venue alumni-sans-pinstripe-regular-italic"
+                      >
+                        Lorem Theater of Spirite, London, Paris.
+                      </p>
+                    </div>
                   </div>
-                  <div class="performance-details">
-                    <p
-                      class="performance-venue alumni-sans-pinstripe-regular-italic"
-                    >
-                      Lorem ipsum dolor sit amet.
-                    </p>
-                    <p
-                      class="performance-opener alumni-sans-pinstripe-regular-italic"
-                    >
-                      Sepombur, de uf 03, 2026
-                    </p>
-                  </div>
-                </div>
-              </li>
-            </ul>
+                </li>
+              </ul>
+              <span class="media-control">
+                <i class="fa-solid fa-angle-right"></i>
+              </span>
+            </div>
+            <div class="logo-block">
+              <img
+                src="./media/img/grillz.png"
+                alt="grillz"
+                class="img-grillz"
+              />
+            </div>
           </div>
         </div>
-        <div class="buttons">
+        <div class="shop-ig-buttons">
           <button type="button" title="shop-btn" class="shop-btn">SHOP</button>
           <button type="button" title="IG-btn" class="ig-btn">IG</button>
         </div>
       </header>
 
       <footer>
-        <div class="social-media">
-          <i class="fa-brands fa-soundcloud"></i>
-          <i class="fa-solid fa-music"></i>
-          <i class="fa-brands fa-spotify"></i>
+        <div class="footer-media">
+          <button type="button" title="soundlcoud" class="footer-btns">
+            <i class="fa-brands fa-soundcloud"></i>
+          </button>
+          <button type="button" title="imusic" class="footer-btns">
+            <i class="fa-solid fa-music"></i>
+          </button>
+          <button type="button" title="spotify" class="footer-btns">
+            <i class="fa-brands fa-spotify"></i>
+          </button>
         </div>
       </footer>
     </div>
