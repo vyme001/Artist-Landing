@@ -8,10 +8,13 @@
 .keania-one-regular {
   margin: 0;
   font-family: "Keania One", sans-serif;
-  font-size: 12vw;
-  font-weight: 400;
   font-style: normal;
   color: rgba(42, 66, 66, 0.726);
+}
+
+.tour-name {
+  font-size: 12vw;
+  font-weight: 400;
 }
 
 .alumni-sans-pinstripe-regular {
@@ -38,10 +41,10 @@ body {
 }
 
 .main-container {
+  display: flex;
   height: inherit;
   width: inherit;
   padding: 20px;
-  margin: 0;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -62,6 +65,10 @@ body {
   justify-content: center;
 }
 
+header {
+  flex-shrink: 1;
+}
+
 header,
 footer,
 button {
@@ -75,10 +82,18 @@ button:hover {
 
 header {
   min-width: min-content;
-  max-width: max-content;
+  width: max-content;
   padding: 20px;
   margin: 0;
   border-radius: 8px;
+  box-sizing: border-box;
+}
+
+.media-player {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .media-block {
@@ -91,6 +106,17 @@ header {
   border-radius: 8px;
   height: 10em;
   width: auto;
+}
+
+.artist-name {
+  font-size: 4vw;
+  font-weight: 200;
+}
+
+.track-name {
+  margin: 0;
+  font-size: 4vw;
+  font-weight: 200;
 }
 
 .logo-block {
@@ -106,13 +132,20 @@ header {
 
 .fa-light {
   font-weight: 900;
-  color: red;
 }
 
 .tour-list * {
   font-size: 4vw;
   padding: 0;
   margin: 0;
+}
+
+.track-scroll,
+.volume-scroll {
+  appearance: none;
+  /* font-family: "Alumni Sans Pinstripe", sans-serif; */
+  font-size: 4vw;
+  display: flex;
 }
 
 li {
@@ -124,11 +157,28 @@ li {
   margin-bottom: 10px;
 }
 
+.track-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.media-controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .card-head {
   height: fit-content;
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+.card-template {
+  border-top: 1px solid rgba(42, 66, 66, 0.411);
 }
 
 .performance-date {
@@ -157,6 +207,8 @@ footer {
   flex: 1;
 }
 
+.fa-thin,
+.fa-solid,
 .fa-brands,
 .fa-music,
 .shop-btn,
@@ -164,6 +216,10 @@ footer {
   color: rgba(42, 66, 66, 0.76);
   font-size: 2rem;
   padding: 0 2px;
+}
+
+.fa-solid.fa-pause {
+  display: none;
 }
 
 .ig-btn,
@@ -178,7 +234,7 @@ footer {
   background-color: transparent;
 }
 
-@media screen and (width <= 430px) {
+@media screen and (width <= 500px) {
   .media-block {
     justify-content: space-around;
   }
@@ -187,11 +243,6 @@ footer {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-  }
-
-  .img-grillz {
-    max-width: 130px;
-    max-height: 350px;
   }
 
   .shop-ig-buttons {
