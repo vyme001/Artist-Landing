@@ -96,19 +96,20 @@ header {
 }
 
 .media-block {
+  /* margin: 5px 0; */
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .img-container {
-  height: auto;
-  width: auto;
+  height: 10em;
+  width: 8em;
 }
 
 .image {
   object-fit: cover;
-  border-radius: 8px;
+  border-radius: 9px;
   height: 100%;
   width: 100%;
 }
@@ -240,7 +241,21 @@ footer {
   background-color: transparent;
 }
 
-@media screen and (width <= 500px) {
+@media screen and (min-width: 500px) {
+  .img-container {
+    height: 20em;
+    width: 15em;
+  }
+
+  .image {
+    object-fit: cover;
+    border-radius: 9px;
+    height: 100%;
+    width: 100%;
+  }
+}
+
+@media (width <= 500px) {
   .media-block {
     justify-content: space-around;
   }
