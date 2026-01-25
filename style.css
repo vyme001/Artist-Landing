@@ -19,7 +19,6 @@
 
 .alumni-sans-pinstripe-regular {
   font-family: "Alumni Sans Pinstripe", sans-serif;
-  font-weight: 400;
   font-style: normal;
 }
 
@@ -102,21 +101,28 @@ header {
   align-items: center;
 }
 
-.image {
-  border-radius: 8px;
-  height: 10em;
+.img-container {
+  height: 7em;
   width: auto;
 }
 
-.artist-name {
-  font-size: 4vw;
-  font-weight: 200;
+.image {
+  object-fit: cover;
+  border-radius: 8px;
+  height: 100%;
+  width: 100%;
 }
 
-.track-name {
+.artist-name,
+.song-name,
+.start,
+.end,
+.date,
+.venue {
   margin: 0;
   font-size: 4vw;
-  font-weight: 200;
+  font-weight: 900;
+  color: rgba(13, 44, 44, 0.76);
 }
 
 .logo-block {
